@@ -1,0 +1,103 @@
+.bg-grey {
+    background-color: #D9E2ED !important;
+}
+
+.has-x-border {
+    border-left: 1px solid var(--border-light) !important;
+    border-right: 1px solid var(--border-light) !important;
+}
+
+.has-border-bottom {
+    border-bottom: 1px solid var(--border-light) !important;
+}
+
+.dataTables_scrollHead table.dataTable.border-collapse {
+    border-collapse: collapse !important;
+}
+
+table.dataTable thead>tr>th.sorting_disabled:after,
+table.dataTable thead>tr>th.sorting_disabled:before {
+    display: none;
+}
+
+.checkbox .checkbox-control {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    font-size: 0;
+    z-index: -10;
+}
+
+.checkbox {
+    height: 17px;
+}
+
+.checkbox .custom-checkbox {
+    height: 1.0625rem;
+    width: 1.0625rem;
+    display: inline-block;
+    border: 2px solid var(--bs-primary);
+    border-radius: 0.3125rem;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.checkbox .checkbox-control:checked + .custom-checkbox:after {
+    content: '✔';
+    position: absolute;
+    top: 50%;
+    left: 0.1875rem;
+    font-size: 0.625rem;
+    line-height: 0.8;
+    color: #1fb1ed;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.dt--control {
+    cursor: pointer;
+}
+
+.shown .dt--control .icon {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.dt-hasChild + tr, 
+.dt-hasChild + tr td {
+    background: #fff;
+    box-shadow: none;
+} 
+
+.row-content {
+    border-left: 1px solid var(--border-light);
+}
+
+.row-content table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.row-content table tr td,
+.row-content table tr th {
+    padding: 13px 26px 13px 24px;
+}
+
+.row-content table tr td:first-child span {
+    position: relative;
+}
+
+.row-content table tr td:first-child span:before {
+    content: '';
+    width: 1rem;
+    height: 1px;
+    background: var(--bs-primary);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -1.5625rem;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
